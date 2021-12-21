@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rock+3D&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+}
+
+body{
+    margin: 2em;
+    text-align: -webkit-center;
+}
+
+.container{
+    max-width: 40vw;
+}
+
+.row{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Rock 3D', cursive;
+    font-size: 3em;
+}
+
+input[type="text"],input[type="password"]{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0.4em;
+}
+
+input[type="submit"],input[type="button"],input[type="reset"]{
+    margin-top: 2em;
+    padding: 0.7em;
+    width: 10em;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover,input[type="reset"]:hover{
+    background-color: rgb(148, 123, 65);
+    transition: 0.5s;
+}
+
+label{
+    font-weight: bolder;
+    display: block;
+    text-align: start;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+fieldset input[type="text"],input[type="password"],
+input[type="date"],input[type="tel"],input[type="email"],
+input[type="number"], select, textarea{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 0.4em;
+}
+
+.gender{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+}
+
+footer{
+    margin-top: 3em;
+}
+
+span{
+    font-weight: bold;
+}
