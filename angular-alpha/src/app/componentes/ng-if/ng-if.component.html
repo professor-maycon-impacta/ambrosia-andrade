@@ -1,0 +1,15 @@
+<div class="content">
+    <h2>Implementação da diretiva *ngIf</h2>
+    <div>
+        Exiba!: <input type="checkbox" [(ngModel)]="exiba">
+    </div>
+
+    <!-- Implementação de *ngIf -->
+    <h3>*ngIf - uso direto</h3>
+    <p *ngIf="exiba">
+        Variável "exiba" com o checkbox ativado!
+    </p>
+    <p *ngIf="!exiba">
+        Variável "exiba" com o checkbox desativado!
+    </p>
+</div>
