@@ -5,15 +5,13 @@ import { Component, Input } from '@angular/core';
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.css']
 })
-export class InputComponent {
+export class InputComponent{
+  // definição das propriedades de entrada de dados
+  @Input() public mensagem: string = ''
+  @Input('alerta') public outraMensagem: string = ''
 
-  // Definição das propriedades de entrada de dados
-  @Input() public mensagem: string = '';
-  @Input('alerta') public outraMensagem: string = '';
-
-  // Definindo a função
+  // definindo a função
   public exibirMensagemAlerta(): void{
-    alert(this.outraMensagem);
+    alert(this.outraMensagem)
   }
-
 }

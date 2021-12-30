@@ -1,0 +1,19 @@
+.bordaTabela {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.bordaTabela td, .bordaTabela th {
+    border: 1px solid #DD0031;
+    padding: 8px;
+}
+.bordaTabela tr:nth-child(even){background-color: #f2f2f2;}
+.bordaTabela tr:hover {background-color: #ddd;}
+.bordaTabela th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #1976D2;
+    color: white;
+}
+

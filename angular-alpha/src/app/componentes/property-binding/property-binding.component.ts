@@ -5,9 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './property-binding.component.html',
   styleUrls: ['./property-binding.component.css']
 })
-export class PropertyBindingComponent {
-
-  // Criando a propriedade para vinculação via property-binding
-  public z: number = 45;
-
+export class PropertyBindingComponent{
+  // criando a propriedade pra vinculação via property-binding
+  public z: number = 45
 }

@@ -1,15 +1,42 @@
-<div class="content">
+<div class = "content">
     <h2>Implementação da diretiva *ngIf</h2>
     <div>
-        Exiba!: <input type="checkbox" [(ngModel)]="exiba">
+        Exiba!: <input type = "checkbox" [(ngModel)] = "exiba" />
     </div>
 
-    <!-- Implementação de *ngIf -->
+    <!--implementação de *ngIf-->
     <h3>*ngIf - uso direto</h3>
-    <p *ngIf="exiba">
-        Variável "exiba" com o checkbox ativado!
+    <p *ngIf = "exiba">
+        Variavel "exiba" com o checkbox ativado! TRUE
     </p>
-    <p *ngIf="!exiba">
-        Variável "exiba" com o checkbox desativado!
+    <p *ngIf = "!exiba">
+        Variavel "exiba" com o checkbox desativado! FALSE
+    </p>
+    <!--trabalhar com *ngIf-else-->
+    <h2>*ngIf - usando o bloco else</h2>
+    <p *ngIf = "exiba; else umBloco">
+        Texto exibido quando o checkbox estiver ativado - TRUE!
+    </p>
+    <ng-template #umBloco>
+        #umBloco - texto exibido quando o checkbox estver desativado - FALSE
+    </ng-template>
+    <!-- trabalhar com *ngIf - then - else-->
+    <h2>*ngIf -  usando os blocos then e else</h2>
+    <p *ngIf = "exiba; then miniView; else novoBloco">
+        -----------------------------------------
+    </p>
+    <ng-template #miniView>
+        Texto exibido quando o checkbox estiver ativado - TRUE!
+    </ng-template>
+    <ng-template #novoBloco>
+        Texto exibido quando o checkbox estiver desativado - FALSE!
+    </ng-template>
+    <!--trabalhando com o atributo hidden-->
+    <h2>Usando hidden</h2>
+    <p [hidden] = "exiba">
+        hidden - texto exibido quando o checkbox estiver desativado! - false
+    </p>
+    <p [hidden] = "!exiba">
+        hidden - texto exibido quando o checkbox estiver ativado! - true
     </p>
 </div>

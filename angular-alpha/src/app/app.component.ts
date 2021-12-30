@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  boasVindas: string = 'Sejam bem-vindos galera Angular Capgemini';
+  boasVindas: string = 'Sejam bem-vindos galera Angular Capgemini'
   title = 'angular-alpha';
 }

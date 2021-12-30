@@ -1,0 +1,21 @@
+<div class = "content">
+    <h2>IMplementação ngStyle</h2>
+    <br /><br />
+
+    <!--este bloco de código manipula a cor do texto indicado na div-->
+    <input type = "color" [(ngModel)] = "cores" />
+    <div [ngStyle] = "{'color': cores}">
+        Mudando a cor do texto
+    </div>
+    <br />
+    <!-- este bloco de código manipula o tamanho do texto indicado na div-->
+    <input type = "text" [(ngModel)] = "tamanho" />
+    <div [ngStyle] = "{'font-size.px': tamanho}">
+        Mudando o tamanho da fonte!
+    </div>
+    <!-- este bloco vincula a instância da classe -->
+    <div [ngStyle] = "objNgStyle">
+        Mudando a cor e o tamanho da fonte do texto pela propriedade de instância da classe no arquivo .ts!
+    </div>
+
+</div>

@@ -1,0 +1,20 @@
+<!-- Este é o componente de criação de registros -->
+<div class="container custom-container">
+    <div class="col-md-12">
+        <h3 class="mb-3 text-center">Criar registro</h3>
+
+        <!-- Criar o formulário -->
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Nome" [(ngModel)]="employeeDetails.name">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Email" [(ngModel)]="employeeDetails.email">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Telefone" [(ngModel)]="employeeDetails.phone">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-outline-success" (click)="addEmployee()">Criar Registro</button>
+        </div>
+    </div>
+</div>

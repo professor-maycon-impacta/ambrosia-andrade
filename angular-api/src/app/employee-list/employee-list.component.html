@@ -1,0 +1,37 @@
+<div class="container custom-container-2">
+    <!-- Verificação para observar a quantidade de registros na coleção -->
+    <div class="no-data text-center" *ngIf="listaColaboradores.length == 0">
+        <p>Ainda não há registros adicionados! Crie um registro... Clique no botão abaixo</p>
+        <button class="btn btn-outline-primary" routerLink="/create-employee"></button>
+    </div>
+    <!-- Verificação para observar a quantidade de registros se for diferente de 0 -->
+    <div class="" *ngIf="listaColaboradores.length != 0">
+        <h3>Employees List Component - Componente de lista de colaboradores</h3>
+        <div class="col-md-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Id Colaborador</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Ação a executar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let x of listaColaboradores">
+                        <td>{{ x.id }}</td>
+                        <td>{{ x.nome }}</td>
+                        <td>{{ x.email }}</td>
+                        <td>{{ x.phone }}</td>
+                        <td>
+                            <span class="edit" routerLink="/edit-employee/{{x.id}}">Edit</span>
+                            <br>
+                            <span class="delete" (click)="excluirColaborador(x.id)">Delete</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

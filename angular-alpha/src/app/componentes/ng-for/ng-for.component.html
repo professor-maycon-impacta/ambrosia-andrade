@@ -1,0 +1,38 @@
+
+<div class = "content">
+    <h2>Implementação da diretiva *ngFor</h2>
+    <!-- criar uma nova tabela para exibir os dados-->
+    <table class = "bordaTabela">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Direção</th>
+                <th>Elenco</th>
+                <th>Ano de Lançamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let x of filmes">
+                <td>{{ x.titulo }}</td>
+                <td>{{ x.direcao }}</td>
+                <td>{{ x.elenco }}</td>
+                <td>{{ x.anoLancamento }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>
+
+
+
+
+
+
+
+<!--criando a lista
+
+    <ul>
+        <li *ngFor = "let x of filmes">
+            {{ x.titulo }} - {{ x.direcao }}
+        </li>
+    </ul>-->

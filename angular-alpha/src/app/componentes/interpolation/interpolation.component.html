@@ -1,21 +1,19 @@
-<!-- Vinculando os dados estabelecidos no arquivo interpolation.componente.ts -->
-
-<div class="content">
+<!--vinculando so dados estabelecidos no arquivo interpolation.compoente.ts-->
+<div class = "content">
     <h2>Interpolation Data binding</h2>
-    <span>O valor da variável x é: {{ x }}</span>
+    <span>O valor da variavel x é: {{ x }}</span>
     <br /><br />
-    
+
     <span>O array de números é composto pelos valores: {{ umArray }}</span>
     <br /><br />
-    
+
     <span>A data de hoje é: {{ dataHoje }}</span>
     <br /><br />
-    
-    <span>O status booleano indicado na variável é: {{ statusBooleano }}</span>
+
+    <span>O status booleano indicado na variavel é: {{ statusBooleano }}</span>
     <br /><br />
 
-    <span>{{ statusBooleano ? "Este texto é exibido quando o status for TRUE" : "Este texto é exibido quando o status for FALSE" }}</span>
+    <span>{{ statusBooleano ? "Este texto é exibido quando o status for TRUE":"Este texto é exibido quando o status for FALSE" }}</span>
     <br /><br />
-
     <span>{{ exibirTexto() }}</span>
 </div>

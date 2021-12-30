@@ -5,10 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './event-binding.component.html',
   styleUrls: ['./event-binding.component.css']
 })
-export class EventBindingComponent {
-  // Estabelecendo a função para o event-binding
+export class EventBindingComponent{
+  // estabelecendo a função para o event-binding
   public exibirAlerta(): void{
-    console.log('Evento disparado - leitura feita via terminal do browser');
-    alert('Evento disparado. Dados vinculados.');
+    console.log('Evento disparado - leitura feita via terminal do browser')
+    alert('Evento disparado. Dados vinculados.')
   }
 }

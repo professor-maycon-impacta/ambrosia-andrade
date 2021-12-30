@@ -6,15 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./interpolation.component.css']
 })
 export class InterpolationComponent {
-
-  // Criar as propriedades para vinculação via interpolação
-  public x: number = 10;
-  public umArray: Array<number> = [10, 67, 90];
-  public dataHoje: Date = new Date();
-  public statusBooleano: boolean = true;
+  // criar as propriedades para vinculação via interpolação
+  public x: number = 10
+  public umArray: Array<number> = [10, 67, 90]
+  public dataHoje: Date = new Date()
+  public statusBooleano: boolean = false
 
   public exibirTexto(): string{
     return 'Texto retornado a partir de uma função!'
-  }
-
+      }
 }
